@@ -1,0 +1,137 @@
+{
+    "loans": [
+      {
+        "Loan No": "L28U3247",
+        "Loan Type": "Home Loan",
+        "Borrower": "Vedica Sachar",
+        "Borrower Address": "83 Yogi Ganj, Kadapa-083720",
+        "Co Borrower Name": "Divit Vora",
+        "Co Borrower Address": "24/543, Acharya Path Ongole-523690",
+        "Current DPD": 91,
+        "Sanction Amount": 1934086,
+        "Region": "West"
+      },
+      {
+        "Loan No": "L28U3243",
+        "Loan Type": "Car Loan",
+        "Borrower": "Hirisha Aggarwal",
+        "Borrower Address": "58/622, Deo Path, Bhubaneshwar 841948",
+        "Co Borrower Name": "Manika Tak",
+        "Co Borrower Address": "58 Telia Road, Sultan Pur Maja 919878",
+        "Current DPD": 100,
+        "Sanction Amount": 1842143,
+        "Region": "North"
+      },
+      {
+        "Loan No": "L28U3250",
+        "Loan Type": "Car Loan",
+        "Borrower": "Priyansh Soman",
+        "Borrower Address": "H.No. 152 Andra Street Amritsar-417162",
+        "Co Borrower Name": "Zaina Dara",
+        "Co Borrower Address": "H.No. 42, Srivastava Marg, Junagadh-191124",
+        "Current DPD": 100,
+        "Sanction Amount": 4537889,
+        "Region": "East"
+      },
+      {
+        "Loan No": "L28U3268",
+        "Loan Type": "Home Loan",
+        "Borrower": "Priyank Chandla",
+        "Borrower Address": "2d, Ray Chowk Cuttack 809332",
+        "Co Borrower Name": "Zain Ghosh",
+        "Co Borrower Address": "H.No., Sp. Sugar Street Kolhapur-543900",
+        "Current DPD": 100,
+        "Sanction Amount": 2681712,
+        "Region": "West"
+      },
+      {
+        "Loan No": "L28U3265",
+        "Loan Type": "Personal Loan",
+        "Borrower": "Vivaan Vikh",
+        "Borrower Address": "H.No. 653 Dada Ganj Ichalkaranji 279823",
+        "Co Borrower Name": "Elakshi Chahal",
+        "Co Borrower Address": "16/45 Divan Road Jaipur 962051",
+        "Current DPD": 70,
+        "Sanction Amount": 3863514,
+        "Region": "West"
+      },
+      {
+        "Loan No": "L28U3282",
+        "Loan Type": "Home Loan",
+        "Borrower": "Samarth Bakshi",
+        "Borrower Address": "22/98 Pashan Road, Pune-411021",
+        "Co Borrower Name": "Ira Grover",
+        "Co Borrower Address": "15, Teli Basti, Chandigarh-160017",
+        "Current DPD": 85,
+        "Sanction Amount": 2054781,
+        "Region": "West"
+      },
+      {
+        "Loan No": "L28U3290",
+        "Loan Type": "Education Loan",
+        "Borrower": "Ahaan Dahiya",
+        "Borrower Address": "53, Gandhi Nagar, Delhi-110032",
+        "Co Borrower Name": "Rhea Ghoshal",
+        "Co Borrower Address": "19, Patel Nagar, Bhopal-462003",
+        "Current DPD": 65,
+        "Sanction Amount": 1573498,
+        "Region": "North"
+      },
+      {
+        "Loan No": "L28U3302",
+        "Loan Type": "Personal Loan",
+        "Borrower": "Kabir Mehta",
+        "Borrower Address": "8, Rosewood Avenue, Ludhiana-141003",
+        "Co Borrower Name": "Aarav Sen",
+        "Co Borrower Address": "66, Balmiki Marg, Udaipur-313001",
+        "Current DPD": 120,
+        "Sanction Amount": 2136890,
+        "Region": "North"
+      },
+      {
+        "Loan No": "L28U3318",
+        "Loan Type": "Car Loan",
+        "Borrower": "Shivani Chauhan",
+        "Borrower Address": "44, Subhash Nagar, Kanpur-208012",
+        "Co Borrower Name": "Neeraj Kapoor",
+        "Co Borrower Address": "H.No. 82, Sevoke Road, Siliguri-734001",
+        "Current DPD": 92,
+        "Sanction Amount": 3124786,
+        "Region": "East"
+      },
+      {
+        "Loan No": "L28U3334",
+        "Loan Type": "Home Loan",
+        "Borrower": "Vivaan Bajaj",
+        "Borrower Address": "52, Banjara Hills, Hyderabad-500034",
+        "Co Borrower Name": "Arya Bansal",
+        "Co Borrower Address": "9, Lal Bagh, Bengaluru-560004",
+        "Current DPD": 78,
+        "Sanction Amount": 2891672,
+        "Region": "South"
+      },
+      {
+        "Loan No": "L28U3345",
+        "Loan Type": "Gold Loan",
+        "Borrower": "Ishaan Malhotra",
+        "Borrower Address": "23, MG Road, Surat-395003",
+        "Co Borrower Name": "Tara Kapoor",
+        "Co Borrower Address": "12, Garden View, Vapi-396195",
+        "Current DPD": 55,
+        "Sanction Amount": 1378643,
+        "Region": "West"
+      },
+      {
+        "Loan No": "L28U3351",
+        "Loan Type": "Education Loan",
+        "Borrower": "Avni Tripathi",
+        "Borrower Address": "8, Nehru Nagar, Varanasi-221010",
+        "Co Borrower Name": "Reyansh Nair",
+        "Co Borrower Address": "54, Park Street, Kolkata-700017",
+        "Current DPD": 110,
+        "Sanction Amount": 1958432,
+        "Region": "East"
+      }
+    ]
+  }
+  
