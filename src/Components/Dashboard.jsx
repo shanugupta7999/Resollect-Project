@@ -19,7 +19,7 @@ import { PiShareNetworkThin } from "react-icons/pi";
 import { LuUsers } from "react-icons/lu";
 import { VscLock } from "react-icons/vsc";
 import { LuArrowDownUp } from "react-icons/lu";
-
+import data from "../Data/loans.json";
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState("Auction");
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -35,10 +35,7 @@ export default function Dashboard() {
   const [sortDirection, setSortDirection] = useState('asc');
 
   useEffect(() => {
-    fetch("/src/Data/loans.json")
-      .then((response) => response.json())
-      .then((data) => setLoanData(data.loans))
-      .catch((error) => console.error("Error fetching data:", error));
+    setLoanData(data.loans); // Directly set the imported data
   }, []);
 
   // Filter function
