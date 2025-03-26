@@ -6,7 +6,7 @@
   "homepage":"http://shanugupta7999.github.io/Resollect-Project",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "start": "vite",
     "build": "vite build",
     "lint": "eslint .",
