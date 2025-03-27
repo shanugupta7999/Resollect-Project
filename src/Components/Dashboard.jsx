@@ -175,7 +175,7 @@ export default function Dashboard() {
           <select
             value={dpdFilter}
             onChange={(e) => setDpdFilter(e.target.value)}
-            className="p-2 border rounded-lg"
+            className="p-2 border rounded-lg hover:bg-blue-700 hover:text-white"
           >
             <option value="">Select DPD Range</option>
             <option value="0-30">0-30 Days</option>
@@ -188,7 +188,7 @@ export default function Dashboard() {
           <select
             value={loanStatusFilter}
             onChange={(e) => setLoanStatusFilter(e.target.value)}
-            className="p-2 border rounded-lg"
+            className="p-2 border rounded-lg hover:bg-blue-700 hover:text-white"
           >
             <option value="">Select Loan Status</option>
             <option value="Defaulted">Defaulted</option>
@@ -199,7 +199,7 @@ export default function Dashboard() {
           <select
             value={loanTypeFilter}
             onChange={(e) => setLoanTypeFilter(e.target.value)}
-            className="p-2 border rounded-lg"
+            className="p-2 border rounded-lg hover:bg-blue-700 hover:text-white"
           >
             <option value="">Select Loan Type</option>
             <option value="Home">Home Loan</option>
@@ -214,14 +214,14 @@ export default function Dashboard() {
               setLoanStatusFilter("");
               setLoanTypeFilter("");
             }}
-            className="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300"
+            className="px-4 py-2 bg-gray-200 rounded-lg hover:bg-blue-700 hover:text-white "
           >
             Clear Filters
           </button>
         </div>
 
         {/* Existing filter and search sections remain the same */}
-        <div className="flex gap-4 mb-4">{/* Existing filter spans */}</div>
+        <div className="flex gap-4 mb-1">{/* Existing filter spans */}</div>
 
         {/* Loan Count */}
         <div>
@@ -234,14 +234,14 @@ export default function Dashboard() {
         <div className="mt-4">
           <button
             onClick={() => setShowModal(true)}
-            className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 mb-4"
+            className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 mb-4"
           >
             Document Upload
           </button>
 
           {/* Modal for File Upload */}
           {showModal && (
-            <div className="fixed inset-0 flex items-center justify-end  bg-black bg-opacity-50 backdrop-blur-sm z-50">
+            <div className="fixed inset-0 flex items-center justify-end  bg-black/80 bg-opacity-50  z-50">
               <div className="bg-white p-6 rounded-lg shadow-lg relative h-full w-96">
                 {/* Close Button */}
                 <button
@@ -313,38 +313,53 @@ export default function Dashboard() {
         {/* Table Section */}
         <div>
           <table className="w-full mt-4">
-            <thead className="bg-gray-200">
-              <tr>
-                {[
-                  "Loan No",
-                  "Loan Type",
-                  "Borrower",
-                  "Borrower Address",
-                  "Co-Borrower Name",
-                  "Co-Borrower Address",
-                  "Current DPD",
-                  "Sanction Amount",
-                  "Region",
-                ].map((col) => (
-                  <th key={col} className="px-4 py-2">
-                    <span className="flex flex-row items-center gap-1">
-                      {col}<LuArrowDownUp className="text-gray-500" />
-                    </span>
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {filterLoans().map((loan, index) => (
-                <tr key={index} className="hover:bg-gray-100">
-                  {Object.values(loan).map((value, i) => (
-                    <td key={i} className="px-4 py-1">
-                      {value}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
+          <thead className="bg-gray-200">
+  <tr>
+    {[
+      "Loan No",
+      "Loan Type",
+      "Borrower",
+      "Borrower Address",
+      "Co-Borrower Name",
+      "Co-Borrower Address",
+      "Current DPD",
+      "Sanction Amount",
+      "Region",
+    ].map((col, index) => (
+      <th key={col} className="px-4 py-2">
+        <span className="flex flex-row items-center gap-1">
+          {/* Checkbox for the 'Loan No' column header */}
+          {col === "Loan No" && <input type="checkbox" className="mr-2" />}
+          {col}
+          <LuArrowDownUp className="text-gray-500" />
+        </span>
+      </th>
+    ))}
+  </tr>
+</thead>
+<tbody>
+  {filterLoans().map((loan, index) => (
+    <tr key={index} className="hover:bg-gray-100">
+      {Object.values(loan).map((value, i) => (
+        <td key={i} className="px-4 py-1">
+          {/* Checkbox and anchor link for the 'Loan No' column */}
+          {i === 0 ? (
+            <>
+              <input type="checkbox" className="mr-2 text-blue-500" />
+              <a href={`#loan-${value}`} className="text-blue-500 hover:underline">
+                {value}
+              </a>
+            </>
+          ) : (
+            value
+          )}
+        </td>
+      ))}
+    </tr>
+  ))}
+</tbody>
+
+
           </table>
         </div>
 
