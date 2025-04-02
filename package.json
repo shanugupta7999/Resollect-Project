@@ -5,12 +5,10 @@
   "type": "module",
   "homepage": "http://shanugupta7999.github.io/Resollect-Project",
   "scripts": {
-    "deploy": "gh-pages -d dist",
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+,
   "dependencies": {
     "@tailwindcss/vite": "^4.0.16",
     "react": "^19.0.0",

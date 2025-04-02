@@ -314,50 +314,50 @@ export default function Dashboard() {
         <div>
           <table className="w-full mt-4">
           <thead className="bg-gray-200">
-  <tr>
-    {[
-      "Loan No",
-      "Loan Type",
-      "Borrower",
-      "Borrower Address",
-      "Co-Borrower Name",
-      "Co-Borrower Address",
-      "Current DPD",
-      "Sanction Amount",
-      "Region",
-    ].map((col, index) => (
-      <th key={col} className="px-4 py-2">
-        <span className="flex flex-row items-center gap-1">
-          {/* Checkbox for the 'Loan No' column header */}
-          {col === "Loan No" && <input type="checkbox" className="mr-2" />}
-          {col}
-          <LuArrowDownUp className="text-gray-500" />
-        </span>
-      </th>
-    ))}
-  </tr>
-</thead>
-<tbody>
-  {filterLoans().map((loan, index) => (
-    <tr key={index} className="hover:bg-gray-100">
-      {Object.values(loan).map((value, i) => (
-        <td key={i} className="px-4 py-1">
-          {/* Checkbox and anchor link for the 'Loan No' column */}
-          {i === 0 ? (
-            <>
-              <input type="checkbox" className="mr-2 text-blue-500" />
-              <a href={`#loan-${value}`} className="text-blue-500 hover:underline">
-                {value}
-              </a>
-            </>
-          ) : (
-            value
-          )}
-        </td>
-      ))}
-    </tr>
-  ))}
-</tbody>
+              <tr>
+                {[
+                  "Loan No",
+                  "Loan Type",
+                  "Borrower",
+                  "Borrower Address",
+                  "Co-Borrower Name",
+                  "Co-Borrower Address",
+                  "Current DPD",
+                  "Sanction Amount",
+                  "Region",
+                ].map((col, index) => (
+                  <th key={col} className="px-4 py-2">
+                    <span className="flex flex-row items-center gap-1">
+                      {/* Checkbox for the 'Loan No' column header */}
+                      {col === "Loan No" && <input type="checkbox" className="mr-2" />}
+                      {col}
+                      <LuArrowDownUp className="text-gray-500" />
+                    </span>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {filterLoans().map((loan, index) => (
+                <tr key={index} className="hover:bg-gray-100">
+                  {Object.values(loan).map((value, i) => (
+                    <td key={i} className="px-4 py-1">
+                      {/* Checkbox and anchor link for the 'Loan No' column */}
+                      {i === 0 ? (
+                        <>
+                          <input type="checkbox" className="mr-2 text-blue-500" />
+                          <a href={`#loan-${value}`} className="text-blue-500 hover:underline">
+                            {value}
+                          </a>
+                        </>
+                      ) : (
+                        value
+                      )}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
 
 
           </table>
